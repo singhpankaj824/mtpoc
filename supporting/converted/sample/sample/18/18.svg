@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg viewBox="0 0 935 1210" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<style type="text/css"><![CDATA[
+.g1_18{
+fill: none;
+stroke: #717073;
+stroke-width: 1;
+stroke-linecap: butt;
+stroke-linejoin: miter;
+}
+]]></style>
+</defs>
+<path d="M80.5,94.5l768,0" class="g1_18" />
+<image x="769" y="55" width="77" height="38" xlink:href="img/1.png" />
+<image x="90" y="169" width="57" height="55" xlink:href="img/2.png" />
+<image x="90" y="232" width="55" height="56" xlink:href="img/3.png" />
+<image x="90" y="296" width="55" height="57" xlink:href="img/4.png" />
+<image x="90" y="361" width="57" height="57" xlink:href="img/5.png" />
+<image x="90" y="426" width="55" height="55" xlink:href="img/6.png" />
+<image x="429" y="170" width="19" height="19" xlink:href="img/7.png" />
+<image x="573" y="233" width="20" height="20" xlink:href="img/8.png" />
+<image x="320" y="297" width="19" height="19" xlink:href="img/9.png" />
+<image x="386" y="362" width="19" height="19" xlink:href="img/10.png" />
+<image x="386" y="427" width="20" height="19" xlink:href="img/11.png" />
+<image x="717" y="534" width="129" height="129" xlink:href="img/12.png" />
+</svg>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg viewBox="0 0 935 1210" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<clipPath id="c0_33"><path d="M82.5,897.5l0,-32l240,0l0,32Z" /></clipPath>
+<clipPath id="c1_33"><path d="M323.5,897.5l0,-32l510,0l0,32Z" /></clipPath>
+<clipPath id="c2_33"><path d="M82.5,932.5l0,-32l240,0l0,32Z" /></clipPath>
+<clipPath id="c3_33"><path d="M323.5,932.5l0,-32l510,0l0,32Z" /></clipPath>
+<clipPath id="c4_33"><path d="M323.5,991.5l0,-55l510,0l0,55Z" /></clipPath>
+<style type="text/css"><![CDATA[
+.g3_33{
+fill: #FFFFFF;
+}
+.g4_33{
+fill: none;
+stroke: #FFFFFF;
+stroke-width: 1;
+stroke-linecap: butt;
+stroke-linejoin: miter;
+}
+.g2_33{
+fill: none;
+stroke: #000000;
+stroke-width: 1;
+stroke-linecap: butt;
+stroke-linejoin: miter;
+}
+.g1_33{
+fill: none;
+stroke: #717073;
+stroke-width: 1;
+stroke-linecap: butt;
+stroke-linejoin: miter;
+}
+]]></style>
+</defs>
+<path d="M80.5,94.5l768,0" class="g1_33" />
+<image x="769" y="55" width="77" height="38" xlink:href="img/1.png" />
+<path d="M322.5,554.5l0,-1" class="g2_33" />
+<path d="M322.5,588.5l0,-34" class="g2_33" />
+<path d="M82.5,588.5l240,0" class="g2_33" />
+<path d="M322.5,589.5l0,-1" class="g2_33" />
+<path d="M323.5,588.5l510,0" class="g2_33" />
+<path d="M322.5,623.5l0,-34" class="g2_33" />
+<path fill-rule="evenodd" d="M82,636l240,0l0,-13L82,623l0,13Z" class="g3_33" />
+<path d="M82.5,668.5l0,-32" class="g4_33" />
+<path d="M322.5,668.5l0,-32" class="g4_33" />
+<path fill-rule="evenodd" d="M82,681l240,0l0,-13L82,668l0,13Z" class="g3_33" />
+<path fill-rule="evenodd" d="M83,668l239,0l0,-32L83,636l0,32Z" class="g3_33" />
+<path d="M323.5,625.5l510,0" class="g4_33" />
+<path d="M323.5,680.5l0,-55" class="g4_33" />
+<path d="M832.5,680.5l0,-55" class="g4_33" />
+<path d="M323.5,681.5l510,0" class="g4_33" />
+<path fill-rule="evenodd" d="M324,647l508,0l0,-22l-508,0l0,22Z" class="g3_33" />
+<path fill-rule="evenodd" d="M324,680l508,0l0,-33l-508,0l0,33Z" class="g3_33" />
+<path d="M82.5,623.5l240,0" class="g2_33" />
+<path d="M82.5,625.5l240,0" class="g4_33" />
+<path d="M322.5,625.5l0,-2" class="g2_33" />
+<path d="M323.5,623.5l510,0" class="g2_33" />
+<path d="M323.5,625.5l510,0" class="g4_33" />
+<path d="M82.5,681.5l241,0" class="g4_33" />
+<path d="M323.5,681.5l510,0" class="g4_33" />
+<path d="M322.5,681.5l0,-56" class="g2_33" />
+<path d="M82.5,682.5l240,0" class="g2_33" />
+<path d="M322.5,683.5l0,-2" class="g2_33" />
+<path d="M323.5,682.5l510,0" class="g2_33" />
+<path d="M322.5,739.5l0,-56" class="g2_33" />
+<path d="M82.5,740.5l240,0" class="g2_33" />
+<path d="M322.5,741.5l0,-2" class="g2_33" />
+<path d="M323.5,740.5l510,0" class="g2_33" />
+<path d="M322.5,774.5l0,-33" class="g2_33" />
+<path d="M322.5,830.5l0,-1" class="g2_33" />
+<path d="M322.5,863.5l0,-33" class="g2_33" />
+<path d="M82.5,865.5l240,0" class="g4_33" />
+<path d="M82.5,897.5l0,-32" class="g4_33" />
+<path d="M322.5,897.5l0,-32" class="g4_33" />
+<path d="M82.5,898.5l240,0" class="g4_33" />
+<g clip-path="url(#c0_33)">
+<path fill-rule="evenodd" d="M83,897l239,0l0,-32L83,865l0,32Z" class="g3_33" />
+</g>
+<path d="M323.5,865.5l510,0" class="g4_33" />
+<path d="M323.5,897.5l0,-32" class="g4_33" />
+<path d="M832.5,897.5l0,-32" class="g4_33" />
+<path d="M323.5,898.5l510,0" class="g4_33" />
+<g clip-path="url(#c1_33)">
+<path fill-rule="evenodd" d="M324,897l508,0l0,-32l-508,0l0,32Z" class="g3_33" />
+</g>
+<path d="M82.5,864.5l240,0" class="g2_33" />
+<path d="M82.5,865.5l240,0" class="g4_33" />
+<path d="M322.5,865.5l0,-2" class="g2_33" />
+<path d="M323.5,864.5l510,0" class="g2_33" />
+<path d="M323.5,865.5l510,0" class="g4_33" />
+<path d="M82.5,898.5l241,0" class="g4_33" />
+<path d="M323.5,898.5l510,0" class="g4_33" />
+<path d="M322.5,898.5l0,-33" class="g2_33" />
+<path d="M82.5,900.5l240,0" class="g4_33" />
+<path d="M82.5,932.5l0,-32" class="g4_33" />
+<path d="M322.5,932.5l0,-32" class="g4_33" />
+<path d="M82.5,934.5l240,0" class="g4_33" />
+<g clip-path="url(#c2_33)">
+<path fill-rule="evenodd" d="M83,932l239,0l0,-32L83,900l0,32Z" class="g3_33" />
+</g>
+<path d="M323.5,900.5l510,0" class="g4_33" />
+<path d="M323.5,932.5l0,-32" class="g4_33" />
+<path d="M832.5,932.5l0,-32" class="g4_33" />
+<path d="M323.5,934.5l510,0" class="g4_33" />
+<g clip-path="url(#c3_33)">
+<path fill-rule="evenodd" d="M324,932l508,0l0,-32l-508,0l0,32Z" class="g3_33" />
+</g>
+<path d="M82.5,899.5l240,0" class="g2_33" />
+<path d="M82.5,900.5l240,0" class="g4_33" />
+<path d="M322.5,900.5l0,-2" class="g2_33" />
+<path d="M323.5,899.5l510,0" class="g2_33" />
+<path d="M323.5,900.5l510,0" class="g4_33" />
+<path d="M82.5,934.5l241,0" class="g4_33" />
+<path d="M323.5,934.5l510,0" class="g4_33" />
+<path d="M322.5,934.5l0,-34" class="g2_33" />
+<path fill-rule="evenodd" d="M82,947l240,0l0,-13L82,934l0,13Z" class="g3_33" />
+<path d="M82.5,979.5l0,-32" class="g4_33" />
+<path d="M322.5,979.5l0,-32" class="g4_33" />
+<path fill-rule="evenodd" d="M82,992l240,0l0,-13L82,979l0,13Z" class="g3_33" />
+<path fill-rule="evenodd" d="M83,979l239,0l0,-32L83,947l0,32Z" class="g3_33" />
+<path d="M323.5,936.5l510,0" class="g4_33" />
+<path d="M323.5,991.5l0,-55" class="g4_33" />
+<path d="M832.5,991.5l0,-55" class="g4_33" />
+<path d="M323.5,992.5l510,0" class="g4_33" />
+<path fill-rule="evenodd" d="M324,958l508,0l0,-22l-508,0l0,22Z" class="g3_33" />
+<g clip-path="url(#c4_33)">
+<path fill-rule="evenodd" d="M324,991l508,0l0,-33l-508,0l0,33Z" class="g3_33" />
+</g>
+<path d="M82.5,934.5l240,0" class="g2_33" />
+<path d="M82.5,936.5l240,0" class="g4_33" />
+<path d="M322.5,936.5l0,-2" class="g2_33" />
+<path d="M323.5,934.5l510,0" class="g2_33" />
+<path d="M323.5,936.5l510,0" class="g4_33" />
+<path d="M82.5,992.5l241,0" class="g4_33" />
+<path d="M323.5,992.5l510,0" class="g4_33" />
+<path d="M322.5,992.5l0,-56" class="g2_33" />
+<image x="629" y="358" width="208" height="195" xlink:href="img/2.png" />
+</svg>
