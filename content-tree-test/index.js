@@ -1,5 +1,27 @@
+var a =  [{
+ 	"heading": "article1",
+ 	"content": "ct1",
+ 	"sub": [{
+ 		"heading": "article1_subarticle",
+ 		"content": "article1_subarticle",
+ 		"sub": [{
+ 			"heading": "article1_subarticle",
+ 			"content": "article1_subarticle",
+ 			"sub": []
+ 		}]
+ 	}]
+ }, {
+ 	"heading": "article2",
+ 	"content": "article2-content",
+ 	"sub": [{
+ 		"heading": "article2",
+ 		"content": "article2-content",
+ 		"sub": []
+ 	}]
+ }]
 
-//var dataObj = [];
+//console.log(a[0]);
+var dataObj = [];
 var element = {};
 
 var lineReader = require('readline').createInterface({
@@ -8,18 +30,24 @@ var lineReader = require('readline').createInterface({
 });
 
 lineReader.on('line', function (line) {
+	var element = {
+		"heading" : line,
+		"content" : "content-text",
+		"sub" : []
+	 };
 
-
-var temp = line;
-var count = (temp.match(/\t/g) || []).length;
+	var len = dataObj.length;
+console.log(len);
+	var temp = line;
+	var count = (temp.match(/\t/g) || []).length;
 
 	if(count === 0)
 		{
 			addNode(dataObj, element);
+//console.log(JSON.stringify(dataObj));
 		}
-	console.log(count);
 
-//	console.log(line);
+//console.log(line);
 
 });
 
@@ -30,4 +58,7 @@ function addNode(nodeIndex, element) {
 	dataObj.push(element);
  
 }
+
+
+
 
