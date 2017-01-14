@@ -23,7 +23,7 @@ var mb_page=[{
 		"id": "d90eb1f2-0851-a8d1-4ccd-78e9db9b2a8f",
  		"sub": []
  	}]
-}];
+ }];
 
 var getHTMLOfSelection = function() {
   var range;

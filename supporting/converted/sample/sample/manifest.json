@@ -1,0 +1,15 @@
+{
+  "name": "Content Profiling",
+  "manifest_version": 2,
+  "version" : "1.0.0.6",
+  "background" : {
+  "page":"index.html"
+  },
+  "browser_action": {
+      "default_title" : "Select Content For Profiling"
+    },
+  "permissions" : [
+    "tabs",
+    "contextMenus"
+    ]
+}

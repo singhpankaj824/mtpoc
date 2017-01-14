@@ -1,0 +1,287 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="navAccordion.min.js"></script>
+	<style>
+	/* Example Styles
+	-----------------------------------------------*/
+	
+		/* General
+		-----------------------------------------------*/
+		body {
+			margin:50px; 
+			font:14px/1.5em Arial, Helvetica, serif;
+		}
+		* {-webkit-box-sizing: border-box;	-moz-box-sizing: border-box;  box-sizing: border-box; -ms-box-sizing: border-box;}
+		
+		/* Left Navigation
+		-----------------------------------------------*/
+		.mainNav {
+			background: #222;
+			width: 25%;
+		}
+			/* First Level */
+			.mainNav ul {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				border-bottom: 1px solid #444
+			}
+			.mainNav ul li {
+				border-top: 1px solid #444;
+			}
+			.mainNav ul li a {
+				color: #FFFFFF;
+				display: block;
+				font-size: 1.1em;
+				line-height: normal;
+				padding:12px 20px;
+				text-decoration:none;
+			}
+			.mainNav ul li a:hover {
+				background: #333;
+				text-decoration: none;
+			}
+				/* Second Level */
+				.mainNav ul ul {
+					border-bottom: none
+				}
+				.mainNav ul ul li {
+					border-top: 1px solid #222;
+					background: #111;
+				}
+				.mainNav ul ul li a {
+					color: #FFFFFF;
+					display: block;
+					font-size: 1em;
+					line-height: normal;
+					padding: 0.5em 1em 0.5em 2.5em;
+				}
+				.mainNav ul ul li a:hover {
+					background: #333;
+				}
+						/* Third Level */
+				.mainNav ul ul ul {
+					border-top:1px solid #222;
+				}
+				.mainNav ul ul ul li {
+					border:none;
+				}
+				.mainNav ul ul ul li a {
+					padding-left:3.5em; 
+					padding-top:0.25em; 
+					padding-bottom:0.25em;
+				}
+			/* Accordion Button */
+			ul li.has-subnav .accordion-btn {
+				color:#fff; 
+				background:rgba(255,255,255, 0.15); font-size:16px;
+			}
+		
+		@media screen and (max-width: 1024px) {
+			.mainNav {width: 40%;}
+		}
+		@media screen and (max-width: 700px) {
+			.mainNav {width: 100%;}
+		}
+</style>
+
+
+
+<script type="text/javascript">
+var mb_page=[{
+ 	"heading": "article1",
+ 	"content": "ct1",
+	"id": "b9ec1d34-a2dd-9139-41fd-3614e83300a4",
+ 	"sub": [{
+ 		"heading": "article1_subarticle",
+ 		"content": "article1_subarticle",
+		"id": "b45a8513-a4b6-d5bd-f5e5-f94beeadd516",
+ 		"sub": [{
+ 			"heading": "article1_subarticle_article1_subarticle",
+ 			"content": "article1_subarticle",
+			"id": "88397416-9c51-e545-8b5c-d5f15fca308f",
+ 			"sub": []
+ 		}]
+ 	}]
+ }, {
+ 	"heading": "article2",
+ 	"content": "article2-content",
+	"id": "1c2c0bbf-716d-8aec-ebc9-ab570d8345f7",
+ 	"sub": [{
+ 		"heading": "article2_subarticle",
+ 		"content": "article2-content",
+		"id": "d90eb1f2-0851-a8d1-4ccd-78e9db9b2a8f",
+ 		"sub": []
+ 	}]
+ }];
+
+// Check for the various File API support.
+if (window.File && window.FileReader && window.FileList && window.Blob) {
+  
+} else {
+  alert('The File APIs are not fully supported in this browser.');
+}
+    $(document).ready(function() {
+
+
+    if ($("#test").addEventListener) {
+        $("#test").addEventListener('contextmenu', function(e) {
+            alert("You've tried to open context menu"); //here you draw your own menu
+            e.preventDefault();
+        }, false);
+    } else {
+
+        //document.getElementById("test").attachEvent('oncontextmenu', function() {
+        //$(".test").bind('contextmenu', function() {
+            $('body').on('contextmenu', 'a.test', function() {
+
+
+            //alert("contextmenu"+event);
+            document.getElementById("rmenu").className = "show";  
+            document.getElementById("rmenu").style.top =  mouseY(event) + 'px';
+            document.getElementById("rmenu").style.left = mouseX(event) + 'px';
+
+            window.event.returnValue = false;
+
+
+        });
+    }
+
+});
+
+// this is from another SO post...  
+    $(document).bind("click", function(event) {
+        document.getElementById("rmenu").className = "hide";
+    });
+
+
+
+function mouseX(evt) {
+    if (evt.pageX) {
+        return evt.pageX;
+    } else if (evt.clientX) {
+       return evt.clientX + (document.documentElement.scrollLeft ?
+           document.documentElement.scrollLeft :
+           document.body.scrollLeft);
+    } else {
+        return null;
+    }
+}
+
+function mouseY(evt) {
+    if (evt.pageY) {
+        return evt.pageY;
+    } else if (evt.clientY) {
+       return evt.clientY + (document.documentElement.scrollTop ?
+       document.documentElement.scrollTop :
+       document.body.scrollTop);
+    } else {
+        return null;
+    }
+}
+</script>
+<style>
+.show {
+    z-index:1000;
+    position: absolute;
+    background-color:#C0C0C0;
+    border: 1px solid blue;
+    padding: 2px;
+    display: block;
+    margin: 0;
+    list-style-type: none;
+    list-style: none;
+}
+
+.hide {
+    display: none;
+}
+
+.show li{ list-style: none; }
+.show a { border: 0 !important; text-decoration: none; }
+.show a:hover { text-decoration: underline !important; }
+</style>
+</head>
+<body>
+<!-- Navigation -->
+	<nav class="mainNav" class="hide" id="rmenu">
+		<ul>
+			<li class="selected"><a href="#">Selected Channel</a>
+				<ul>
+					<li><a href="#">Sub Link 1</a></li>
+					<li><a href="#">Sub Link 2</a></li>
+					<li><a href="#">Sub Link 3</a>
+						<ul>
+							<li><a href="#">Sub Link 1</a></li>
+							<li><a href="#">Sub Link 2</a></li>
+							<li><a href="#">Sub Link 3</a></li>
+							<li><a href="#">Sub Link 4</a></li>
+							<li><a href="#">Sub Link 5</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Sub Link 4</a></li>
+					<li><a href="#">Sub Link 5</a></li>
+				</ul>
+			</li>
+			<li><a>This is set to header only</a>
+				<ul>
+					<li><a href="#">Sub Link 1</a></li>
+					<li><a href="#">Sub Link 2</a></li>
+					<li><a href="#">Sub Link 3</a></li>
+					<li><a href="#">Sub Link 4</a></li>
+					<li><a href="#">Sub Link 5</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Link 3</a></li>
+			<li><a href="#">A really really long long link title goes here</a>
+				<ul>
+					<li><a href="#">Sub Link 1</a></li>
+					<li><a href="#">Sub Link 2</a></li>
+					<li><a href="#">Sub Link 3</a></li>
+					<li><a href="#">Sub Link 4</a></li>
+					<li><a href="#">Sub Link 5</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+            <a href="www.google.com" class="test">Google</a>
+            <a href="www.google.com" class="test">Link 2</a>
+            <a href="www.google.com" class="test">Link 3</a>
+            <a href="www.google.com" class="test">Link 4</a>
+        </div>
+
+        <!-- initially hidden right-click menu -->
+        <div class="hide" id="rmenu">
+            <ul>
+                <li>
+                    <a href="http://www.google.com">Google</a>
+                </li>
+
+                <li>
+                    <a href="http://localhost:8080/login">Localhost</a>
+                </li>
+
+                <li>
+                    <a href="C:\">C</a>
+                </li>
+            </ul>
+        </div>
+		
+		<script>
+		jQuery(document).ready(function(){
+		
+			//Accordion Nav
+			jQuery('.mainNav').navAccordion({
+				expandButtonText: '<i class="fa fa-plus"></i>',  //Text inside of buttons can be HTML
+				collapseButtonText: '<i class="fa fa-minus"></i>'
+			}, 
+			function(){
+				console.log('Callback')
+			});
+			
+		});
+	</script>
+</body>
+</html>
