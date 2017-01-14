@@ -1,31 +1,5 @@
-var b = [];
-console.log('b = ' + b.length);
-
-var a =  [{
- 	"heading": "article1",
- 	"content": "ct1",
- 	"sub": [{
- 		"heading": "article1_subarticle",
- 		"content": "article1_subarticle",
- 		"sub": [{
- 			"heading": "article1_subarticle",
- 			"content": "article1_subarticle",
- 			"sub": []
- 		}]
- 	}]
- }, {
- 	"heading": "article2",
- 	"content": "article2-content",
- 	"sub": [{
- 		"heading": "article2",
- 		"content": "article2-content",
- 		"sub": []
- 	}]
- }]
-
-//console.log(a[0]);
-var dataObj = [];
-var element = {};
+var fs = require('fs');
+var writeStream = fs.createWriteStream('output.json');
 
 var lineReader = require('readline').createInterface({
 
@@ -39,35 +13,26 @@ lineReader.on('line', function (line) {
 		"sub" : []
 	 };
 
-	var len = dataObj.length;
-
-console.log(len);
-
-	var temp = line;
-	var count = (temp.match(/\t/g) || []).length;
-
-	if(count === 0)
-		{
-			addNode(dataObj, element);
  
-		}
-		if(count > 0)
-		{
-			addNode(dataObj[len-1].sub, line);	
-		}
-
 //console.log(line);
+ 
+
+
+//	var count = (temp.match(/\t/g) || []).length;
 
 });
+	
 
 
-
-function addNode(nodeIndex, element) {
-
-	dataObj.push(element);
- 
+var hash = guid();
+console.log(hash);
+function guid() {
+  return s4() + s4() + '-' + s4() + '-' + s4() + '-' +
+    s4() + '-' + s4() + s4() + s4();
 }
 
-
-
-
+function s4() {
+  return Math.floor((1 + Math.random()) * 0x10000)
+    .toString(16)
+    .substring(1);
+}
