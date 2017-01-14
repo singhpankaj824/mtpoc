@@ -1,3 +1,6 @@
+var b = [];
+console.log('b = ' + b.length);
+
 var a =  [{
  	"heading": "article1",
  	"content": "ct1",
@@ -37,14 +40,20 @@ lineReader.on('line', function (line) {
 	 };
 
 	var len = dataObj.length;
+
 console.log(len);
+
 	var temp = line;
 	var count = (temp.match(/\t/g) || []).length;
 
 	if(count === 0)
 		{
 			addNode(dataObj, element);
-//console.log(JSON.stringify(dataObj));
+ 
+		}
+		if(count > 0)
+		{
+			addNode(dataObj[len-1].sub, line);	
 		}
 
 //console.log(line);
