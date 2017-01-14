@@ -1,5 +1,6 @@
 var fs = require('fs');
-var writeStream = fs.createWriteStream('output.json');
+var f = 'write.json';
+
 
 var lineReader = require('readline').createInterface({
 
@@ -16,6 +17,13 @@ lineReader.on('line', function (line) {
  
 //console.log(line);
  
+ var tempStr = '{"id" : "' + guid() + '", "heading" : "' + line + '", "content" : "", "sub" : [] }, \n';
+ 
+var fullStr = line.replace(line, tempStr);
+var fullStr1 = fullStr.replace(/\t/g, ' ');
+//console.log(fullStr);
+writeData(fullStr1);
+
 
 
 //	var count = (temp.match(/\t/g) || []).length;
@@ -24,8 +32,7 @@ lineReader.on('line', function (line) {
 	
 
 
-var hash = guid();
-console.log(hash);
+
 function guid() {
   return s4() + s4() + '-' + s4() + '-' + s4() + '-' +
     s4() + '-' + s4() + s4() + s4();
@@ -35,4 +42,18 @@ function s4() {
   return Math.floor((1 + Math.random()) * 0x10000)
     .toString(16)
     .substring(1);
+}
+
+
+
+function writeData(data) {
+
+fs.appendFile(f, data,function(err){
+  if(err)
+    console.error(err);
+  console.log('Appended!');
+});
+
+
+
 }
