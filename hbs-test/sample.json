@@ -1,0 +1,21 @@
+ [{
+ 	"heading": "article1",
+ 	"content": "ct1",
+ 	"sub": [{
+ 		"heading": "article1_subarticle",
+ 		"content": "article1_subarticle",
+ 		"sub": [{
+ 			"heading": "article1_subarticle",
+ 			"content": "article1_subarticle",
+ 			"sub": []
+ 		}]
+ 	}]
+ }, {
+ 	"heading": "article2",
+ 	"content": "article2-content",
+ 	"sub": [{
+ 		"heading": "article2",
+ 		"content": "article2-content",
+ 		"sub": []
+ 	}]
+ }]

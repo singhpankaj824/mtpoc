@@ -1,0 +1,21 @@
+level = count
+
+if(tab = 0) then 
+	add(mainNode.element)
+else
+	add(mainNode[MAX-LENGTH].sub.element) 
+
+
+
+function addnode(dataObj, level, element)
+{
+	if(level = 0) 
+			dataObj.push(element)
+			return
+	else
+		
+
+
+
+	
+}
