@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>post_test</title>
+</head>
+<body>
+<script>
+
+
+    function requestData(endPoint, onReady) {
+	var schema = { "heading" : "h1", "id" : 123, "content" : "sample content"};
+      var postData = JSON.stringify(schema);
+      var request = new XMLHttpRequest();
+      request.onload = function() {
+        onReady(JSON.parse(request.responseText));
+      };
+
+      request.onerror = function() {
+        onReady([]);
+      };
+
+      request.open('POST', endPoint, true);
+      request.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
+      request.send(postData);
+    }
+	requestData("http://localhost:3545/test", function(data) { 
+			alert(data);
+		});
+
+
+</script>  
+</body>
+</html>
