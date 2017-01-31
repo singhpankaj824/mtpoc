@@ -1,6 +1,6 @@
 ﻿var selectedContent;
 var MenuRecord;
-
+var endPoint = "http://localhost:3545/test";
 var items = [];
 
 // Check for the various File API support.
@@ -37,6 +37,16 @@ $(document).ready(function () {
 
     });
 
+    $("#postJson").on("click", function () {
+
+        requestData(endPoint, function (MenuRecord) { });
+
+        //requestData("http://localhost:3545/test", function(data) { 
+        //    alert(data);
+        //});
+        // requestData
+
+    });
 });
 
 // this is from another SO post...
@@ -115,7 +125,7 @@ function CreateContexMenu(MenuRecords) {
         }
         items.push("</li>");
     }
-    var sendJson = '<li><a id="postJson" onClick="javascript:console.log(MenuRecord)">Post Json</a></li>';
+    var sendJson = '<li><a id="postJson">Post Json</a></li>';
     items.push(sendJson);
     items.push("</ul>");
     $("<div/>", {
@@ -180,4 +190,19 @@ function GetJson() {
     });
 }
 GetJson();
+function requestData(endPoint, onReady) {
+    var schema = MenuRecord;
+    var postData = JSON.stringify(schema);
+    var request = new XMLHttpRequest();
+    request.onload = function () {
+        onReady(JSON.parse(request.responseText));
+    };
 
+    request.onerror = function () {
+        onReady([]);
+    };
+
+    request.open('POST', endPoint, true);
+    request.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
+    request.send(postData);
+}
