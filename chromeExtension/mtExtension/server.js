@@ -24,8 +24,8 @@ app.use(express.static('public'));
 
  app.post('/test',function(req,res){
  		var body = req.body;
-   console.log(" body = " + JSON.stringify(body));
-	var jsonData =  (" body = " + JSON.stringify(body));
+ 		console.log(JSON.stringify(body));
+ 		var jsonData = JSON.stringify(body);
 writeData(jsonData);
    res.end("yes");
 });

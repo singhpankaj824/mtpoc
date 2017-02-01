@@ -43,6 +43,7 @@ $(document).ready(function () {
     $.ajax({
       type: "POST",
       url: endPoint,
+      contentType:  'application/json',
       data: postData,
       success: function () {
 
